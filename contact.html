@@ -5,18 +5,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Trent Rand">
+    <meta name="author" content="ThemeStarz">
 
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="assets/css/jquery.slider.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/owl.transitions.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
-    <title>Properties Listing | Beram Enterprises</title>
+    <title>Contact | Beram Enterprises</title>
+
 </head>
 
 <body class="page-sub-page page-listing-lines page-search-results" id="page-top">
@@ -62,7 +63,7 @@
                         <ul class="nav navbar-nav">
                             <li><a href="index.html">Homepage</a>
                             </li>
-                            <li class="active"><a href="#">Properties</a>
+                            <li><a href="properties.html">Properties</a>
                             </li>
                             <li class="has-child"><a href="#">Pages</a>
                                 <ul class="child-navigation">
@@ -114,7 +115,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a>
+                            <li class="active"><a href="#">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -133,269 +134,106 @@
                 <ol class="breadcrumb">
                     <li><a href="index.html">Home</a>
                     </li>
-                    <li class="active">Property Listing</li>
+                    <li class="active">Contact</li>
                 </ol>
             </div>
             <!-- end Breadcrumb -->
 
             <div class="container">
                 <div class="row">
-                    <!-- Results -->
+                    <!-- Contact -->
                     <div class="col-md-9 col-sm-9">
-                        <section id="results">
+                        <section id="agent-detail">
                             <header>
-                                <h1>Properties Listing</h1>
+                                <h1>Contact Us</h1>
                             </header>
-                            <section id="search-filter">
-                                <figure>
-                                    <h3><i class="fa fa-search"></i>Search Results:</h3>
-                                    <span class="search-count">28</span>
-                                    <div class="sorting">
-                                        <div class="form-group">
-                                            <select name="sorting">
-                                                <option value="">Sort By</option>
-                                                <option value="1">Lowest price first</option>
-                                                <option value="2">Highest price first</option>
-                                                <option value="3">Date added</option>
-                                            </select>
+                            <section id="contact-information">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-5">
+                                        <section id="address">
+                                            <header>
+                                                <h3>Address</h3>
+                                            </header>
+                                            <address>
+                                            <strong>Beram Enterprises</strong><br>
+                                            143 W McDowell Rd<br>
+                                            Phoenix, AZ 85003
+                                               
+                                        </address>
+                                            <br />
+                                            <br />
+                                            <header>
+                                                <h3>Contact Us</h3>
+                                            </header> (602) 254-3300
+                                            <a href="#">info@BeramEnterprises.com</a>
+                                        </section>
+                                        <!-- /#address -->
+
+                                    </div>
+                                    <!-- /.col-md-4 -->
+                                    <div class="col-md-8 col-sm-7">
+                                        <header>
+                                            <h3>Where We Are</h3>
+                                        </header>
+                                        <div id="contact-map"></div>
+                                    </div>
+                                    <!-- /.col-md-8 -->
+                                </div>
+                                <!-- /.row -->
+                            </section>
+                            <!-- /#agent-info -->
+                            <hr class="thick">
+                            <section id="form">
+                                <header>
+                                    <h3>Send Us a Message</h3>
+                                </header>
+                                <form role="form" id="form-contact" method="post" class="clearfix">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form-contact-name">Your Name<em>*</em>
+                                                </label>
+                                                <input type="text" class="form-control" id="form-contact-name" name="form-contact-name" required>
+                                            </div>
+                                            <!-- /.form-group -->
                                         </div>
-                                        <!-- /.form-group -->
+                                        <!-- /.col-md-6 -->
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form-contact-email">Your Email<em>*</em>
+                                                </label>
+                                                <input type="email" class="form-control" id="form-contact-email" name="form-contact-email" required>
+                                            </div>
+                                            <!-- /.form-group -->
+                                        </div>
+                                        <!-- /.col-md-6 -->
                                     </div>
-                                </figure>
+                                    <!-- /.row -->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="form-contact-message">Your Message<em>*</em>
+                                                </label>
+                                                <textarea class="form-control" id="form-contact-message" rows="8" name="form-contact-message" required></textarea>
+                                            </div>
+                                            <!-- /.form-group -->
+                                        </div>
+                                        <!-- /.col-md-12 -->
+                                    </div>
+                                    <!-- /.row -->
+                                    <div class="form-group clearfix">
+                                        <button type="submit" class="btn pull-right btn-default" id="form-contact-submit">Send a Message</button>
+                                    </div>
+                                    <!-- /.form-group -->
+                                    <div id="form-status"></div>
+                                </form>
+                                <!-- /#form-contact -->
                             </section>
-                            <section id="properties" class="display-lines">
-                                <div class="property">
-                                    <figure class="tag status">For Sale</figure>
-                                    <figure class="type" title="Apartment"><img src="assets/img/property-types/apartment.png" alt="">
-                                    </figure>
-                                    <div class="property-image">
-                                        <figure class="ribbon">In Hold</figure>
-                                        <a href="property-detail.html">
-                                            <img alt="" src="assets/img/properties/property-01.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <header>
-                                            <a href="property-detail.html"><h3>4862 Palmer Road</h3></a>
-                                            <figure>Worthington, OH 43085</figure>
-                                        </header>
-                                        <div class="tag price">$ 38,000</div>
-                                        <aside>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum, bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt...
-                                            </p>
-                                            <dl>
-                                                <dt>Status:</dt>
-                                                <dd>Sale</dd>
-                                                <dt>Area:</dt>
-                                                <dd>860 m<sup>2</sup>
-                                                </dd>
-                                                <dt>Beds:</dt>
-                                                <dd>3</dd>
-                                                <dt>Baths:</dt>
-                                                <dd>2</dd>
-                                            </dl>
-                                        </aside>
-                                        <a href="property-detail.html" class="link-arrow">Read More</a>
-                                    </div>
-                                </div>
-                                <!-- /.property -->
-                                <div class="property">
-                                    <figure class="type" title="House Boat"><img src="assets/img/property-types/houseboat.png" alt="">
-                                    </figure>
-                                    <div class="property-image">
-                                        <a href="property-detail.html">
-                                            <img alt="" src="assets/img/properties/property-03.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <header>
-                                            <a href="property-detail.html"><h3>987 Cantebury Drive</h3></a>
-                                            <figure>Golden Valley, MN 55427</figure>
-                                        </header>
-                                        <div class="tag price">$ 38,000</div>
-                                        <aside>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum, bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt...
-                                            </p>
-                                            <dl>
-                                                <dt>Status:</dt>
-                                                <dd>Sale</dd>
-                                                <dt>Area:</dt>
-                                                <dd>860 m<sup>2</sup>
-                                                </dd>
-                                                <dt>Beds:</dt>
-                                                <dd>3</dd>
-                                                <dt>Baths:</dt>
-                                                <dd>2</dd>
-
-                                            </dl>
-                                        </aside>
-                                        <a href="property-detail.html" class="link-arrow">Read More</a>
-                                    </div>
-                                </div>
-                                <!-- /.property -->
-                                <div class="property no-border">
-                                    <figure class="type" title="Single Family"><img src="assets/img/property-types/single-family.png" alt="">
-                                    </figure>
-                                    <figure class="tag status">For Rent</figure>
-                                    <div class="property-image">
-                                        <a href="property-detail.html">
-                                            <img alt="" src="assets/img/properties/property-02.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <header>
-                                            <a href="property-detail.html"><h3>2479 Murphy Court</h3></a>
-                                            <figure>Minneapolis, MN 55402 </figure>
-                                        </header>
-                                        <div class="tag price">$ 100,000</div>
-                                        <aside>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum, bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt...
-                                            </p>
-                                            <dl>
-                                                <dt>Status:</dt>
-                                                <dd>Sale</dd>
-                                                <dt>Area:</dt>
-                                                <dd>860 m<sup>2</sup>
-                                                </dd>
-                                                <dt>Beds:</dt>
-                                                <dd>3</dd>
-                                                <dt>Baths:</dt>
-                                                <dd>2</dd>
-
-                                            </dl>
-                                        </aside>
-                                        <a href="property-detail.html" class="link-arrow">Read More</a>
-                                    </div>
-                                </div>
-                                <!-- /.property -->
-
-                                <div class="property">
-                                    <figure class="tag status">For Sale</figure>
-                                    <figure class="type" title="Garage"><img src="assets/img/property-types/garage.png" alt="">
-                                    </figure>
-                                    <div class="property-image">
-                                        <a href="property-detail.html">
-                                            <img alt="" src="assets/img/properties/property-05.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <header>
-                                            <a href="property-detail.html"><h3>3542 Bryan Street</h3></a>
-                                            <figure>Lexington, NC 27292 </figure>
-                                        </header>
-                                        <div class="tag price">$ 75,000</div>
-                                        <aside>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum, bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt...
-                                            </p>
-                                            <dl>
-                                                <dt>Status:</dt>
-                                                <dd>Sale</dd>
-                                                <dt>Area:</dt>
-                                                <dd>860 m<sup>2</sup>
-                                                </dd>
-                                                <dt>Beds:</dt>
-                                                <dd>3</dd>
-                                                <dt>Baths:</dt>
-                                                <dd>2</dd>
-                                            </dl>
-                                        </aside>
-                                        <a href="property-detail.html" class="link-arrow">Read More</a>
-                                    </div>
-                                </div>
-                                <!-- /.property -->
-                                <div class="property">
-                                    <figure class="tag status">For Sale</figure>
-                                    <figure class="type" title="Apartment"><img src="assets/img/property-types/apartment.png" alt="">
-                                    </figure>
-                                    <div class="property-image">
-                                        <a href="property-detail.html">
-                                            <img alt="" src="assets/img/properties/property-06.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <header>
-                                            <a href="property-detail.html"><h3>2186 Rinehart Road</h3></a>
-                                            <figure>Doral, FL 33178</figure>
-                                        </header>
-                                        <div class="tag price">$ 238,000</div>
-                                        <aside>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum, bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt...
-                                            </p>
-                                            <dl>
-                                                <dt>Status:</dt>
-                                                <dd>Sale</dd>
-                                                <dt>Area:</dt>
-                                                <dd>860 m<sup>2</sup>
-                                                </dd>
-                                                <dt>Beds:</dt>
-                                                <dd>3</dd>
-                                                <dt>Baths:</dt>
-                                                <dd>2</dd>
-                                            </dl>
-                                        </aside>
-                                        <a href="property-detail.html" class="link-arrow">Read More</a>
-                                    </div>
-                                </div>
-                                <!-- /.property -->
-                                <div class="property">
-                                    <figure class="type" title="Villa"><img src="assets/img/property-types/villa.png" alt="">
-                                    </figure>
-                                    <div class="property-image">
-                                        <a href="property-detail.html">
-                                            <img alt="" src="assets/img/properties/property-08.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <header>
-                                            <a href="property-detail.html"><h3>1949 Tennessee Avenue</h3></a>
-                                            <figure>Westland, MI 48185 </figure>
-                                        </header>
-                                        <div class="tag price">$ 38,000</div>
-                                        <aside>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum, bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt...
-                                            </p>
-                                            <dl>
-                                                <dt>Status:</dt>
-                                                <dd>Sale</dd>
-                                                <dt>Area:</dt>
-                                                <dd>860 m<sup>2</sup>
-                                                </dd>
-                                                <dt>Beds:</dt>
-                                                <dd>3</dd>
-                                                <dt>Baths:</dt>
-                                                <dd>2</dd>
-
-                                            </dl>
-                                        </aside>
-                                        <a href="property-detail.html" class="link-arrow">Read More</a>
-                                    </div>
-                                </div>
-                                <!-- /.property -->
-
-                                <!-- Pagination -->
-                                <div class="center">
-                                    <ul class="pagination">
-                                        <li class="active"><a href="#">1</a>
-                                        </li>
-                                        <li><a href="#">2</a>
-                                        </li>
-                                        <li><a href="#">3</a>
-                                        </li>
-                                        <li><a href="#">4</a>
-                                        </li>
-                                        <li><a href="#">5</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.pagination-->
-                                </div>
-                                <!-- /.center-->
-                            </section>
-                            <!-- /#properties-->
                         </section>
-                        <!-- /#results -->
+                        <!-- /#agent-detail -->
                     </div>
                     <!-- /.col-md-9 -->
-                    <!-- end Results -->
+                    <!-- end Contact -->
 
                     <!-- sidebar -->
                     <div class="col-md-3 col-sm-3">
@@ -563,9 +401,13 @@
 
     <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="assets/js/markerwithlabel_packed.js"></script>
+    <script type="text/javascript" src="assets/js/infobox.js"></script>
     <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script>
     <script type="text/javascript" src="assets/js/jshashtable-2.1_src.js"></script>
     <script type="text/javascript" src="assets/js/jquery.numberformatter-1.2.3.js"></script>
@@ -573,11 +415,17 @@
     <script type="text/javascript" src="assets/js/jquery.dependClass-0.1.js"></script>
     <script type="text/javascript" src="assets/js/draggable-0.1.js"></script>
     <script type="text/javascript" src="assets/js/jquery.slider.js"></script>
+
+    <script type="text/javascript" src="assets/js/custom-map.js"></script>
     <script type="text/javascript" src="assets/js/custom.js"></script>
     <!--[if gt IE 8]>
 <script type="text/javascript" src="assets/js/ie.js"></script>
 <![endif]-->
-
+    <script>
+        _latitude = 33.4655264;
+        _longitude = -112.0778469;
+        google.maps.event.addDomListener(window, 'load', contactUsMap(_latitude, _longitude));
+    </script>
 </body>
 
 </html>
